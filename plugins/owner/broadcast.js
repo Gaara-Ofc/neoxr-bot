@@ -19,10 +19,10 @@ exports.run = {
             for (let jid of id) {
                await Func.delay(1500)
                await client.sendMessageModify(jid, text, null, {
-                  title: '© neoxr-bot v2.2.0 (Public Bot)',
-                  thumbnail: await Func.fetchBuffer('https://telegra.ph/file/aa76cce9a61dc6f91f55a.jpg'),
+                  title: '© nadin-bot v2.2.0 (Public Bot)',
+                  thumbnail: await Func.fetchBuffer('https://telegra.ph/file/4bd324217a33f6063d781.jpg'),
                   largeThumb: true,
-                  url: 'https://chat.whatsapp.com/Dh1USlrqIfmJT6Ji0Pm2pP',
+                  url: 'https://chat.whatsapp.com/F2tqNFaoyU9Aof9YnGxJeG',
                   mentionedJid: command == 'bcgc' ? await (await client.groupMetadata(jid)).participants.map(v => v.id) : []
                })
             }
