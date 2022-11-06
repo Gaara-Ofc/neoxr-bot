@@ -41,7 +41,7 @@ module.exports = (m) => {
          if (!('antivirtex' in group)) group.antivirtex = true
          if (!('filter' in group)) group.filter = false
          if (!('left' in group)) group.left = false
-         if (!('localonly' in group)) group.localonly = false
+         if (!('localonly' in group)) group.localonly = true
          if (!('mute' in group)) group.mute = false
          if (!('member' in group)) group.member = {}
          if (!('text_left' in group)) group.text_left = ''
