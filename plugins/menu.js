@@ -99,8 +99,9 @@ exports.run = {
                print += commands.sort((a, b) => a.usage.localeCompare(b.usage)).map(v => `	◦  ${isPrefix + v.usage} ${v.use}`).join('\n')
             }
             client.sendMessageModify(m.chat, print + '\n\n' + global.footer, m, {
-               ads: false,
-               largeThumb: true
+               ads: true,
+               largeThumb: true,
+               url: 'https://chat.whatsapp.com/F2tqNFaoyU9Aof9YnGxJeG'
             })
          }
       } catch (e) {
